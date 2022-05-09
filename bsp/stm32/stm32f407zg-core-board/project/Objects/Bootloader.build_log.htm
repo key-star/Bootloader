@@ -1,0 +1,341 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.33.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 1, 1, LIC=KIVNB-2TVWT-8YDVV-PGCT9-AINFR-Y25X4
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.33.0.0
+Toolchain Path:  D:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.33.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.8.0
+Dialog DLL:      TCM.DLL V1.48.0.0
+ 
+<h2>Project:</h2>
+E:\workspace\Bootloader\bsp\stm32\stm32f407zg-core-board\project\RT-Thread.uvprojx
+Project File Date:  03/21/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'rt-thread'
+assembling startup_stm32f407xx.s...
+compiling backtrace.c...
+compiling div0.c...
+compiling showmem.c...
+assembling context_rvds.S...
+compiling cpuport.c...
+compiling system_stm32f4xx.c...
+compiling stm32f4xx_hal_msp.c...
+compiling stm32f4xx_hal.c...
+compiling stm32f4xx_hal_cortex.c...
+compiling stm32f4xx_hal_dma.c...
+compiling stm32f4xx_hal_dma_ex.c...
+compiling stm32f4xx_hal_exti.c...
+compiling stm32f4xx_hal_flash.c...
+compiling stm32f4xx_hal_flash_ex.c...
+compiling stm32f4xx_hal_flash_ramfunc.c...
+compiling stm32f4xx_hal_gpio.c...
+compiling stm32f4xx_hal_pwr.c...
+compiling stm32f4xx_hal_pwr_ex.c...
+compiling stm32f4xx_hal_rcc_ex.c...
+compiling stm32f4xx_hal_rcc.c...
+compiling stm32f4xx_hal_spi.c...
+compiling stm32f4xx_hal_sram.c...
+compiling stm32f4xx_hal_tim.c...
+compiling stm32f4xx_hal_tim_ex.c...
+compiling stm32f4xx_ll_fsmc.c...
+compiling stm32f4xx_hal_uart.c...
+compiling board.c...
+compiling main.c...
+compiling drv_common.c...
+compiling drv_gpio.c...
+compiling drv_usart.c...
+compiling drv_spi.c...
+compiling drv_flash_f4.c...
+compiling fal_flash_sfud_port.c...
+compiling drv_lcd.c...
+compiling completion.c...
+compiling dataqueue.c...
+compiling pipe.c...
+compiling ringblk_buf.c...
+compiling ringbuffer.c...
+compiling waitqueue.c...
+compiling workqueue.c...
+compiling pin.c...
+compiling serial.c...
+compiling spi_core.c...
+compiling spi_dev.c...
+compiling spi_flash_sfud.c...
+compiling spi_flash_init.c...
+compiling sfud_sfdp.c...
+compiling sfud.c...
+compiling clock.c...
+compiling components.c...
+compiling cpu.c...
+compiling device.c...
+compiling idle.c...
+compiling irq.c...
+compiling ipc.c...
+compiling kservice.c...
+compiling mem.c...
+compiling memheap.c...
+compiling mempool.c...
+compiling object.c...
+compiling scheduler.c...
+compiling signal.c...
+compiling slab.c...
+compiling thread.c...
+compiling timer.c...
+compiling crc8.c...
+compiling crc16.c...
+compiling crc32.c...
+compiling quicklz.c...
+..\..\..\..\components\quicklz\quicklz.c(233): warning:  #177-D: function "update_hash"  was declared but never referenced
+  static __inline void update_hash(qlz_state_decompress *state, const unsigned char *s)
+..\..\..\..\components\quicklz\quicklz.c: 1 warning, 0 errors
+compiling tiny_aes.c...
+compiling tiny_base64.c...
+compiling tiny_md5.c...
+compiling tiny_sha1.c...
+compiling tiny_sha2.c...
+compiling fal_flash.c...
+compiling fal.c...
+compiling fal_partition.c...
+compiling cmd.c...
+compiling finsh_compiler.c...
+compiling finsh_error.c...
+compiling finsh_heap.c...
+compiling finsh_init.c...
+compiling finsh_node.c...
+compiling finsh_ops.c...
+compiling finsh_parser.c...
+compiling finsh_token.c...
+compiling finsh_var.c...
+compiling finsh_vm.c...
+compiling msh.c...
+compiling msh_file.c...
+compiling shell.c...
+compiling symbol.c...
+compiling fal_rtt.c...
+compiling qboot_aes.c...
+compiling qboot.c...
+..\..\..\..\components\qboot\src\qboot.c(111): warning:  #188-D: enumerated type mixed with another type
+      return(fal_partition_find(part_name) != NULL);
+..\..\..\..\components\qboot\src\qboot.c(120): warning:  #188-D: enumerated type mixed with another type
+          return(false);
+..\..\..\..\components\qboot\src\qboot.c(122): warning:  #188-D: enumerated type mixed with another type
+      return(true);
+..\..\..\..\components\qboot\src\qboot.c(131): warning:  #188-D: enumerated type mixed with another type
+          return(false);
+..\..\..\..\components\qboot\src\qboot.c(133): warning:  #188-D: enumerated type mixed with another type
+      return(true);
+..\..\..\..\components\qboot\src\qboot.c(140): warning:  #188-D: enumerated type mixed with another type
+          return(false);
+..\..\..\..\components\qboot\src\qboot.c(143): warning:  #188-D: enumerated type mixed with another type
+      return (crc32_cal((u8 *)fw_info, (sizeof(fw_info_t) - sizeof(u32))) == fw_info->hdr_crc);
+..\..\..\..\components\qboot\src\qboot.c(163): warning:  #188-D: enumerated type mixed with another type
+              return(false);
+..\..\..\..\components\qboot\src\qboot.c(173): warning:  #188-D: enumerated type mixed with another type
+          return(false);
+..\..\..\..\components\qboot\src\qboot.c(176): warning:  #188-D: enumerated type mixed with another type
+      return(true);
+..\..\..\..\components\qboot\src\qboot.c(189): warning:  #188-D: enumerated type mixed with another type
+          return(false);
+..\..\..\..\components\qboot\src\qboot.c(192): warning:  #188-D: enumerated type mixed with another type
+      return(release_sign == 0);
+..\..\..\..\components\qboot\src\qboot.c(205): warning:  #188-D: enumerated type mixed with another type
+          return(false);
+..\..\..\..\components\qboot\src\qboot.c(208): warning:  #188-D: enumerated type mixed with another type
+      return(true);
+..\..\..\..\components\qboot\src\qboot.c(225): warning:  #188-D: enumerated type mixed with another type
+          return(false);
+..\..\..\..\components\qboot\src\qboot.c(228): warning:  #188-D: enumerated type mixed with another type
+      return(true);
+..\..\..\..\components\qboot\src\qboot.c(257): warning:  #188-D: enumerated type mixed with another type
+          return(false);
+..\..\..\..\components\qboot\src\qboot.c(260): warning:  #188-D: enumerated type mixed with another type
+      return(true);
+..\..\..\..\components\qboot\src\qboot.c(287): warning:  #188-D: enumerated type mixed with another type
+          return(false);
+..\..\..\..\components\qboot\src\qboot.c(290): warning:  #188-D: enumerated type mixed with another type
+      return(true);
+..\..\..\..\components\qboot\src\qboot.c(300): warning:  #188-D: enumerated type mixed with another type
+              return(false);
+..\..\..\..\components\qboot\src\qboot.c(308): warning:  #188-D: enumerated type mixed with another type
+             return(false);
+..\..\..\..\components\qboot\src\qboot.c(315): warning:  #188-D: enumerated type mixed with another type
+          return(false);
+..\..\..\..\components\qboot\src\qboot.c(318): warning:  #188-D: enumerated type mixed with another type
+      return(true);
+..\..\..\..\components\qboot\src\qboot.c(640): warning:  #188-D: enumerated type mixed with another type
+          return(false);
+..\..\..\..\components\qboot\src\qboot.c(646): warning:  #188-D: enumerated type mixed with another type
+          return(false);
+..\..\..\..\components\qboot\src\qboot.c(662): warning:  #188-D: enumerated type mixed with another type
+              return(false);
+..\..\..\..\components\qboot\src\qboot.c(673): warning:  #188-D: enumerated type mixed with another type
+              return(false);
+..\..\..\..\components\qboot\src\qboot.c(683): warning:  #188-D: enumerated type mixed with another type
+          return(false);
+..\..\..\..\components\qboot\src\qboot.c(686): warning:  #188-D: enumerated type mixed with another type
+      return(true);
+..\..\..\..\components\qboot\src\qboot.c(703): warning:  #188-D: enumerated type mixed with another type
+          return(false);
+..\..\..\..\components\qboot\src\qboot.c(709): warning:  #188-D: enumerated type mixed with another type
+          return(false);
+..\..\..\..\components\qboot\src\qboot.c(718): warning:  #188-D: enumerated type mixed with another type
+          return(false);
+..\..\..\..\components\qboot\src\qboot.c(735): warning:  #188-D: enumerated type mixed with another type
+              return(false);
+..\..\..\..\components\qboot\src\qboot.c(745): warning:  #188-D: enumerated type mixed with another type
+              return(false);
+..\..\..\..\components\qboot\src\qboot.c(754): warning:  #188-D: enumerated type mixed with another type
+      if ( ! qbt_fw_info_write(dst_part_name, fw_info, true))
+..\..\..\..\components\qboot\src\qboot.c(757): warning:  #188-D: enumerated type mixed with another type
+          return(false);
+..\..\..\..\components\qboot\src\qboot.c(760): warning:  #188-D: enumerated type mixed with another type
+      return(true);
+..\..\..\..\components\qboot\src\qboot.c(765): warning:  #188-D: enumerated type mixed with another type
+      if ( ! qbt_fw_info_read(part_name, &fw_info, true))
+..\..\..\..\components\qboot\src\qboot.c(768): warning:  #188-D: enumerated type mixed with another type
+          return(false);
+..\..\..\..\components\qboot\src\qboot.c(774): warning:  #188-D: enumerated type mixed with another type
+          return(false);
+..\..\..\..\components\qboot\src\qboot.c(782): warning:  #188-D: enumerated type mixed with another type
+              return(false);
+..\..\..\..\components\qboot\src\qboot.c(790): warning:  #188-D: enumerated type mixed with another type
+      return(true);
+..\..\..\..\components\qboot\src\qboot.c(798): warning:  #188-D: enumerated type mixed with another type
+          return(false);
+..\..\..\..\components\qboot\src\qboot.c(801): warning:  #188-D: enumerated type mixed with another type
+      if ( ! qbt_fw_info_read(fw_part_name, fw_info, false))
+..\..\..\..\components\qboot\src\qboot.c(804): warning:  #188-D: enumerated type mixed with another type
+          return(false);
+..\..\..\..\components\qboot\src\qboot.c(810): warning:  #188-D: enumerated type mixed with another type
+          return(false);
+..\..\..\..\components\qboot\src\qboot.c(816): warning:  #188-D: enumerated type mixed with another type
+          return(false);
+..\..\..\..\components\qboot\src\qboot.c(825): warning:  #188-D: enumerated type mixed with another type
+              return(false);
+..\..\..\..\components\qboot\src\qboot.c(832): warning:  #188-D: enumerated type mixed with another type
+      return(true);
+..\..\..\..\components\qboot\src\qboot.c(842): warning:  #188-D: enumerated type mixed with another type
+          return(false);
+..\..\..\..\components\qboot\src\qboot.c(858): warning:  #188-D: enumerated type mixed with another type
+          return(false);
+..\..\..\..\components\qboot\src\qboot.c(864): warning:  #188-D: enumerated type mixed with another type
+          return(false);
+..\..\..\..\components\qboot\src\qboot.c(868): warning:  #188-D: enumerated type mixed with another type
+      return(true);    
+..\..\..\..\components\qboot\src\qboot.c(892): warning:  #188-D: enumerated type mixed with another type
+          HAL_NVIC_DisableIRQ(i);
+..\..\..\..\components\qboot\src\qboot.c(893): warning:  #188-D: enumerated type mixed with another type
+          HAL_NVIC_ClearPendingIRQ(i);
+..\..\..\..\components\qboot\src\qboot.c(921): warning:  #188-D: enumerated type mixed with another type
+      bool rst = true;
+..\..\..\..\components\qboot\src\qboot.c(940): warning:  #188-D: enumerated type mixed with another type
+              rst = false;
+..\..\..\..\components\qboot\src\qboot.c(1000): warning:  #188-D: enumerated type mixed with another type
+          return(false);
+..\..\..\..\components\qboot\src\qboot.c(1009): warning:  #188-D: enumerated type mixed with another type
+              return(false);
+..\..\..\..\components\qboot\src\qboot.c(1015): warning:  #188-D: enumerated type mixed with another type
+          return(true);
+..\..\..\..\components\qboot\src\qboot.c(1021): warning:  #188-D: enumerated type mixed with another type
+          return(false);
+..\..\..\..\components\qboot\src\qboot.c(1036): warning:  #188-D: enumerated type mixed with another type
+      return(true);
+..\..\..\..\components\qboot\src\qboot.c(1051): warning:  #188-D: enumerated type mixed with another type
+                  return(true);
+..\..\..\..\components\qboot\src\qboot.c(1058): warning:  #188-D: enumerated type mixed with another type
+      return(false);
+..\..\..\..\components\qboot\src\qboot.c(1066): warning:  #188-D: enumerated type mixed with another type
+          return(false);
+..\..\..\..\components\qboot\src\qboot.c(1077): warning:  #188-D: enumerated type mixed with another type
+              return(false);
+..\..\..\..\components\qboot\src\qboot.c(1083): warning:  #188-D: enumerated type mixed with another type
+      return(true);
+..\..\..\..\components\qboot\src\qboot.c(1103): warning:  #188-D: enumerated type mixed with another type
+      if ( ! qbt_fw_check(src_part_name, &fw_info, true))
+..\..\..\..\components\qboot\src\qboot.c(1105): warning:  #188-D: enumerated type mixed with another type
+          return(false);
+..\..\..\..\components\qboot\src\qboot.c(1113): warning:  #188-D: enumerated type mixed with another type
+          return(false);
+..\..\..\..\components\qboot\src\qboot.c(1121): warning:  #188-D: enumerated type mixed with another type
+          return(false);
+..\..\..\..\components\qboot\src\qboot.c(1126): warning:  #188-D: enumerated type mixed with another type
+          return(false);
+..\..\..\..\components\qboot\src\qboot.c(1130): warning:  #188-D: enumerated type mixed with another type
+      return(true);
+..\..\..\..\components\qboot\src\qboot.c(1135): warning:  #188-D: enumerated type mixed with another type
+      if ( ! qbt_fw_check(part_name, &fw_info, true))
+..\..\..\..\components\qboot\src\qboot.c(1137): warning:  #188-D: enumerated type mixed with another type
+          return(false);
+..\..\..\..\components\qboot\src\qboot.c(1144): warning:  #188-D: enumerated type mixed with another type
+          return(false);
+..\..\..\..\components\qboot\src\qboot.c(1152): warning:  #188-D: enumerated type mixed with another type
+              return(true);
+..\..\..\..\components\qboot\src\qboot.c(1158): warning:  #188-D: enumerated type mixed with another type
+          return(false);
+..\..\..\..\components\qboot\src\qboot.c(1167): warning:  #188-D: enumerated type mixed with another type
+      return(true);
+..\..\..\..\components\qboot\src\qboot.c(1190): warning:  #188-D: enumerated type mixed with another type
+          if (qbt_startup_shell(false))
+..\..\..\..\components\qboot\src\qboot.c(1212): warning:  #188-D: enumerated type mixed with another type
+      if (qbt_startup_shell(true))
+..\..\..\..\components\qboot\src\qboot.c(1218): warning:  #188-D: enumerated type mixed with another type
+      qbt_release_from_part(QBOOT_DOWNLOAD_PART_NAME, true);
+..\..\..\..\components\qboot\src\qboot.c(1234): warning:  #188-D: enumerated type mixed with another type
+      if (qbt_startup_shell(false))
+..\..\..\..\components\qboot\src\qboot.c(1271): warning:  #188-D: enumerated type mixed with another type
+          return(false);
+..\..\..\..\components\qboot\src\qboot.c(1286): warning:  #188-D: enumerated type mixed with another type
+              return(false);
+..\..\..\..\components\qboot\src\qboot.c(1291): warning:  #188-D: enumerated type mixed with another type
+              return(false);
+..\..\..\..\components\qboot\src\qboot.c(1298): warning:  #188-D: enumerated type mixed with another type
+      return(true);
+..\..\..\..\components\qboot\src\qboot.c(1304): warning:  #188-D: enumerated type mixed with another type
+      if ( ! qbt_fw_check(part_name, &fw_info, false))
+..\..\..\..\components\qboot\src\qboot.c(1364): warning:  #188-D: enumerated type mixed with another type
+          return(false);
+..\..\..\..\components\qboot\src\qboot.c(1369): warning:  #188-D: enumerated type mixed with another type
+      return(true);
+..\..\..\..\components\qboot\src\qboot.c(1432): warning:  #188-D: enumerated type mixed with another type
+          if ( ! qbt_fw_check(src, &fw_info, true))
+..\..\..\..\components\qboot\src\qboot.c(1453): warning:  #188-D: enumerated type mixed with another type
+          if (qbt_release_from_part(part_name, false))
+..\..\..\..\components\qboot\src\qboot.c(1500): warning:  #188-D: enumerated type mixed with another type
+          if ( ! qbt_fw_check(part_name, &fw_info, false))
+..\..\..\..\components\qboot\src\qboot.c: 94 warnings, 0 errors
+compiling qboot_quicklz.c...
+linking...
+Program Size: Code=91226 RO-data=21334 RW-data=744 ZI-data=14176  
+FromELF: creating hex file...
+After Build - User command #1: fromelf --bin -o "E:\workspace\Bootloader\bsp\stm32\stm32f407zg-core-board\project\Objects\Bootloader.bin" "E:\workspace\Bootloader\bsp\stm32\stm32f407zg-core-board\project\Objects\Bootloader.axf"
+".\Objects\Bootloader.axf" - 0 Error(s), 95 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.15.0.pack
+                Keil.STM32F4xx_DFP.2.15.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  D:\Keil_v5\ARM\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:02:09
+</pre>
+</body>
+</html>
